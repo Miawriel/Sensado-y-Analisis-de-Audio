@@ -1,7 +1,9 @@
 Clasificación de Audio Ambiental con ML 🎙️🤖
+
 Este proyecto es parte de la Maestría en Ciencias de la Computación y consiste en el desarrollo de un sistema capaz de identificar 7 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 180 muestras grabadas por distintas personas.
 
 🚀 Resumen del Proyecto
+
 El objetivo principal fue transformar señales de audio crudas en descriptores matemáticos (MFCCs) para entrenar y comparar la eficacia de tres modelos de clasificación: SVM (Lineal), Random Forest y una Red Neuronal (MLP).
 
 🛠️ Pasos Clave del Preprocesamiento:
