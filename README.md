@@ -1,5 +1,5 @@
 # Clasificación de Audio Ambiental con Machine Learning 🎙️🤖
-Este proyecto es parte de la Maestría en [Tu Área] y consiste en el desarrollo de un sistema capaz de identificar 7 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 179 muestras grabado por diversos colaboradores.
+Este proyecto es parte de la Maestría en Ciencias de la Computacion y consiste en el desarrollo de un sistema capaz de identificar 7 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 179 muestras grabado por diversos colaboradores.
 
 🚀 Resumen del Proyecto
 El objetivo principal fue transformar señales de audio crudas en descriptores matemáticos (MFCCs) para entrenar y comparar la eficacia de tres arquitecturas de clasificación: SVM (Lineal), Random Forest y una Red Neuronal (MLP).
@@ -18,8 +18,7 @@ Clase Perfecta: La Sala fue identificada con un F1-score de 1.00 en todos los mo
 
 Análisis del 'Baño' vs 'Nula': Se identificó una confusión recurrente entre estas clases. Esto se atribuye a que la clase "Nula" (sonidos ambientales desconocidos) comparte frecuencias similares con el flujo de agua turbulento (WC) registrado en la clase baño.
 
-📋 Requisitos
-Para ejecutar este notebook necesitas:
+📋 Requisitos:
 
 Python 3.x
 
