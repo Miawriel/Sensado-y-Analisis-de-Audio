@@ -19,6 +19,7 @@ Clase Perfecta: La Sala fue identificada con un F1-score de 1.00 en todos los mo
 Análisis del Baño vs Nula: Se identificó una confusión recurrente entre estas clases. Esto se atribuye a que la clase "Nula" (sonidos ambientales desconocidos) comparte frecuencias similares con el flujo de agua turbulento (WC) registrado en la categoría baño.
 
 📋 Requisitos:
+
 Python 3.x
 
 Librosa
