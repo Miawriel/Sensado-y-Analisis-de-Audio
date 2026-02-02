@@ -1,6 +1,6 @@
 Clasificación de Audio Ambiental con ML 🎙️🤖
 
-Este proyecto es parte de la Maestría en Ciencias de la Computación y consiste en el desarrollo de un sistema capaz de identificar 7 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 180 muestras grabadas por distintas personas.
+Este proyecto es parte de la Maestría en Ciencias de la Computación y consiste en el desarrollo de un sistema capaz de identificar 6 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 198 muestras grabadas por distintas personas.
 
 🚀 Resumen del Proyecto
 
@@ -14,7 +14,7 @@ Eliminación de Ruidos Estacionarios: Uso de librosa.effects.trim para descartar
 Normalización: Ajuste de amplitud para compensar las diferencias de volumen entre los distintos dispositivos de grabación.
 
 📊 Hallazgos Principales
-Mejor Modelo: El Random Forest logró el desempeño más alto con un 64% de accuracy, seguido de cerca por el MLP con un 61%. Ambos demostraron ser superiores para manejar la variabilidad del dataset colectivo tras el preprocesamiento.
+Mejor Modelo: El Random Forest logró el desempeño más alto con un 65% de accuracy, seguido de cerca por el MLP con un 60%. Ambos demostraron ser superiores para manejar la variabilidad del dataset colectivo tras el preprocesamiento.
 
 Clase Perfecta: La Sala fue identificada con un F1-score de 1.00 en todos los modelos, confirmando que posee una firma acústica sumamente distintiva.
 
