@@ -1,3 +1,5 @@
+![Portada del Proyecto](portada.png)
+
 Clasificación de Audio Ambiental con ML 🎙️🤖
 
 Este proyecto es parte de la Maestría en Ciencias de la Computación y consiste en el desarrollo de un sistema capaz de identificar 6 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 198 muestras grabadas por distintas personas.
