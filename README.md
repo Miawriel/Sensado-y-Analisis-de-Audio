@@ -1,30 +1,66 @@
-## Clasificación de Audio Ambiental con ML 🎙️🤖
+# Clasificación de Audio Ambiental con Machine Learning 🎧
 
-Este proyecto es parte de la Maestría en Ciencias de la Computación y consiste en el desarrollo de un sistema capaz de identificar 6 entornos domésticos diferentes a partir de grabaciones de audio cortas. Se utilizó un dataset colectivo de 198 muestras grabadas por distintas personas.
+Este proyecto forma parte de la Maestría en Ciencias de la Computación y
+consiste en desarrollar un sistema capaz de identificar entornos domésticos
+a partir de grabaciones de audio cortas.
 
-🚀 Resumen del Proyecto
+Se trabajó con un conjunto de datos colectivo de 198 muestras para
+entrenamiento y 18 muestras para prueba, grabadas por diferentes personas
+en distintos ambientes.
 
-El objetivo principal fue transformar señales de audio crudas en descriptores matemáticos (MFCCs) para entrenar y comparar la eficacia de tres modelos de clasificación: SVM (Lineal), Random Forest y una Red Neuronal (MLP).
+## 🧠 Descripción
 
-🛠️ Pasos Clave del Preprocesamiento:
-Limpieza de Etiquetas: Estandarización de nombres y unificación de categorías (minúsculas, eliminación de espacios y corrección de variaciones).
+El objetivo principal es transformar señales de audio crudas en descriptores
+matemáticos y entrenar modelos de clasificación para distinguir entre
+ambientes como *baño*, *cocina*, *sala* y otros.
 
-Eliminación de Ruidos Estacionarios: Uso de librosa.effects.trim para descartar silencios y ruidos de fondo en los extremos de las grabaciones.
+Durante el desarrollo se realizaron los siguientes pasos principales:
 
-Normalización: Ajuste de amplitud para compensar las diferencias de volumen entre los distintos dispositivos de grabación.
+- Carga y preprocesamiento de los archivos de audio.
+- Extracción de características acústicas (MFCC).
+- Manejo de valores faltantes y escalado de las características.
+- Entrenamiento de varios modelos de aprendizaje automático.
+- Evaluación con datos de prueba y análisis comparativo.
 
-📊 Hallazgos Principales
-Mejor Modelo: El Random Forest logró el desempeño más alto con un 65% de accuracy, seguido de cerca por el MLP con un 60%. Ambos demostraron ser superiores para manejar la variabilidad del dataset colectivo tras el preprocesamiento.
+## 🛠️ Modelos utilizados
 
-Clase Perfecta: La Sala fue identificada con un F1-score de 1.00 en todos los modelos, confirmando que posee una firma acústica sumamente distintiva.
+Se evaluaron distintos modelos, de los cuales se seleccionaron tres por su
+robustez en conjuntos de datos pequeños y ruido presente en los audios:
 
+- **Random Forest**: modelo basado en ensambles de árboles.
+- **Extra Trees**: variante de Random Forest con mayor aleatoriedad.
+- **KNN (K-Nearest Neighbors)**: modelo basado en vecinos más cercanos.
 
-📋 Requisitos:
+Extra Trees mostró un desempeño más equilibrado al analizar métricas
+como el F1-score macro, aunque Random Forest presentó un accuracy global
+ligeramente mayor. Esto indica que Extra Trees comete menos errores entre
+clases similares y ofrece mayor consistencia general.
 
-Python 3.x
+## 📊 Resultado general
 
-Librosa
+Los modelos fueron evaluados con el conjunto de prueba proporcionado por
+el profesor. Las métricas obtenidas y las matrices de confusión permiten
+identificar qué clases fueron clasificadas correctamente y cuáles presentaron
+mayor confusión.
 
-Scikit-learn
+Al revisar los audios de prueba manualmente se observó que varias muestras
+etiquetadas como *baño* contenían sonidos de pasos u otros ruidos ambientales
+que dificultan su clasificación automática, lo cual explica parte de los
+errores observados.
 
-Pandas / Numpy
+## 📁 Requisitos
+
+Para correr el notebook correctamente es necesario tener instalado:
+
+- Python 3.x
+- Librerías:
+  - `librosa`
+  - `scikit-learn`
+  - `numpy`
+  - `matplotlib`
+
+Puedes instalarlas con:
+
+```bash
+pip install librosa scikit-learn numpy matplotlib
+
